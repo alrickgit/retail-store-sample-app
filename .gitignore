@@ -13,7 +13,7 @@ kubeconfig_*
 node_modules
 dist
 .venv
-
+*.json
 ort-build
 
 Chart.lock
