@@ -80,6 +80,7 @@ jobs:
     needs: detect-changes
     if: needs.detect-changes.outputs.has-changes == 'true'
     permissions:
+      id-token: write
       contents: write
     strategy:
       matrix: ${{ fromJson(needs.detect-changes.outputs.matrix) }}
